@@ -1,7 +1,8 @@
 # Market Data Ingestion Module
 
 ## Architecture Flow Diagram
-ermaid
+
+```mermaid
 flowchart TD
     subgraph Exchange["EXCHANGE (NSE/BSE)"]
         DMA1[DMA Primary<br/>UDP Multicast<br/>L3 Binary]
@@ -74,8 +75,9 @@ flowchart TD
     style FeedHandler fill:#fff4e1
     style GapRecovery fill:#ffe1e1
     style Core fill:#e1ffe1
-    style Consumers fill:#f0e1ff---
+    style Consumers fill:#f0e1ff
 
+```
 ## System Assumptions
 
 ### Feed Configuration
